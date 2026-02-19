@@ -88,6 +88,13 @@ h2 {
   display: block;
 }
 /* FEATURED PROJECT */
+.featured {
+  position: relative;
+  z-index: 1;
+}
+.featured {
+    padding-bottom: 60px;
+}
 .featured-content {
     display: flex;
     flex-wrap: wrap;
@@ -98,10 +105,11 @@ h2 {
 .featured-content img {
     width: 100%;
     max-width: 500px;
+    max-height: 400px;   /* THIS fixes the overlap */
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
-
 .featured-text {
     max-width: 500px;
 }
@@ -141,7 +149,7 @@ h2 {
 
 .contact {
   position: relative;
-  z-index: 10;
+  z-index: 9999;
 }
 
 /* RESPONSIVE */
