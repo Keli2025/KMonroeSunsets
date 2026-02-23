@@ -160,6 +160,8 @@ h2 {
 .featured-slider img:nth-child(15) { animation-delay: 28s; }
 .featured-slider img:nth-child(16) { animation-delay: 30s; }
 .featured-slider img:nth-child(17) { animation-delay: 32s; }
+.featured-slider img:nth-child(18) { animation-delay: 34s; }  
+.featured-slider img:nth-child(19) { animation-delay: 36s; }  
 
 @keyframes fade {
     0% { opacity: 0; }
