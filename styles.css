@@ -82,7 +82,7 @@ h2 {
 
 .gallery img {
   width: 100%;
-  height: 300px; /* consistent height */
+  height: 450px; /* consistent height */
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
@@ -162,6 +162,50 @@ h2 {
 .featured-slider img:nth-child(17) { animation-delay: 32s; }
 .featured-slider img:nth-child(18) { animation-delay: 34s; }  
 .featured-slider img:nth-child(19) { animation-delay: 36s; }  
+.featured-slider img:nth-child(20) { animation-delay: 38s; }  
+.featured-slider img:nth-child(21) { animation-delay: 40s; }
+.featured-slider img:nth-child(22) { animation-delay: 42s; }  
+/* Project Gallery Layout */
+.project-gallery {
+  padding: 80px 0;
+  background: #000;
+}
+
+.project-gallery h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #fff;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* The grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Images inside the grid */
+.gallery-grid img {
+  width: 100%;
+  height: 250%;
+  object-fit: cover;        /* keeps the editorial crop */
+  object-position: center;  /* keeps heads in frame */
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+/* Hover effect */
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
 
 @keyframes fade {
     0% { opacity: 0; }
@@ -203,6 +247,83 @@ h2 {
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+/* Project Hero */
+.project-hero {
+  text-align: center;
+  padding: 100px 20px 40px;
+  background: #000;
+  color: #fff;
+}
+
+.project-hero h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.project-subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Details Grid */
+.project-details {
+  padding: 60px 0;
+  background: #0a0a0a;
+}
+
+.details-grid {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.details-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Description */
+.project-description {
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+  color: #fff;
+  text-align: center;
+}
+
+.project-description h2 {
+  margin-bottom: 20px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
 }
 /* CONTACT */
 .contact {
