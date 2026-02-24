@@ -258,10 +258,6 @@ h2 {
 .featured-slider img:nth-child(20) { animation-delay: 38s; }
 .featured-slider img:nth-child(21) { animation-delay: 40s; }
 .featured-slider img:nth-child(22) { animation-delay: 42s; }
-.featured-slider img:nth-child(23) { animation-delay: 44s; }
-.featured-slider img:nth-child(24) { animation-delay: 46s; }  
-.featured-slider img:nth-child(25) { animation-delay: 48s; }
-.featured-slider img:nth-child(26) { animation-delay: 50s; }
 
 /* DETAILS GRID */
 .project-details {
