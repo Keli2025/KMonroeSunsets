@@ -14,13 +14,28 @@ body {
 
 /* HERO SECTION */
 .hero {
-  height: 90vh;
-  background: url("images/hero.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: url("kmonroeassets/featuremalaysia/malaysia2025/pankorsunset.jpg") center/cover no-repeat;
+  padding: 160px 20px;
   text-align: center;
+  color: #fff;
   position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.65)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero::after {
@@ -29,11 +44,6 @@ body {
   inset: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
   z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
 }
 
 .hero-content h1 {
@@ -185,14 +195,14 @@ h2 {
   padding: 14px 32px;
   font-size: 1.1rem;
   border-radius: 50px;
-  background: #ff7ab8;
+  background: #25568f;
   color: white;
   text-decoration: none;
   transition: 0.3s ease;
 }
 
 .featured-btn:hover {
-  background: #ff4fa3;
+  background: #3d7ac0;
   transform: translateY(-3px);
 }
 
@@ -337,15 +347,31 @@ h2 {
   margin-bottom: 20px;
 }
 .project-overview {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 80px 20px;
+  max-width: 850px;
+  margin: 120px auto;
+  padding: 70px 40px;
+  background: #25568f;
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 25px rgba(37,86,143,0.3);
   color: #f2f2f2;
-  font-weight: 300;
   line-height: 1.75;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
 
+.project-overview h2 {
+  font-size: 2.6rem;
+  margin-bottom: 24px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0 12px var(--accent-glow);
+}
   /* FIX: readable background */
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(7, 1, 1, 0.55);
   border-radius: 12px;
 
   /* animation */
@@ -354,13 +380,6 @@ h2 {
   animation: fadeUp 0.8s ease-out forwards;
 }
 
-.project-overview h2 {
-  font-size: 2.4rem;
-  color: #ffffff;
-  margin-bottom: 24px;
-  letter-spacing: 0.6px;
-  font-weight: 400;
-}
 
 .project-overview p {
   font-size: 1.15rem;
@@ -374,6 +393,19 @@ h2 {
     transform: translateY(0);
   }
 }
-.project-overview {
-  background: red !important;
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.9s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+:root {
+  --accent: #ff8f6b; /* warm sunset coral */
+  --accent-glow: rgba(255,140,110,0.55);
 }
