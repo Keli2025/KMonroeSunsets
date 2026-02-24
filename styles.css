@@ -48,6 +48,30 @@ body {
   font-size: 1.2rem;
   margin-top: 10px;
 }
+.hero-title {
+  background: url("kmonroeassets/featuremalaysia/malaysia2025/pankorsunset.jpg") center/cover no-repeat;
+  padding: 140px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft dark overlay for readability */
+.hero-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.hero-title h1 {
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  z-index: 2;
+  position: relative;
+}
 
 /* SECTIONS */
 section {
@@ -61,11 +85,30 @@ h2 {
 }
 
 /* ABOUT */
-.about p {
-  max-width: 700px;
-  font-size: 1.1rem;
+
+.about-me {
+  width: 90%;
+  max-width: 900px;
+  margin: 80px auto;   /* centers the whole block */
+  text-align: center;  /* centers all text inside */
+  color: #f2f2f2;
+  line-height: 1.75;
 }
 
+.about-me h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.about-me p {
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  max-width: 750px;
+  margin: 0 auto;      /* centers the paragraph width */
+}
 /* HOMEPAGE GALLERY */
 .gallery .grid {
   display: grid;
@@ -258,7 +301,6 @@ h2 {
 .featured-slider img:nth-child(20) { animation-delay: 38s; }
 .featured-slider img:nth-child(21) { animation-delay: 40s; }
 .featured-slider img:nth-child(22) { animation-delay: 42s; }
-
 /* DETAILS GRID */
 .project-details {
   padding: 60px 0;
@@ -293,4 +335,45 @@ h2 {
 
 .project-description h2 {
   margin-bottom: 20px;
+}
+.project-overview {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  color: #f2f2f2;
+  font-weight: 300;
+  line-height: 1.75;
+
+  /* FIX: readable background */
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.project-overview h2 {
+  font-size: 2.4rem;
+  color: #ffffff;
+  margin-bottom: 24px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+}
+
+.project-overview p {
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  line-height: 1.75;
+}
+/* ANIMATION */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.project-overview {
+  background: red !important;
 }
