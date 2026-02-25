@@ -99,8 +99,8 @@ h2 {
 .about-me {
   width: 90%;
   max-width: 900px;
-  margin: 80px auto;   /* centers the whole block */
-  text-align: center;  /* centers all text inside */
+  margin: 80px auto;
+  text-align: center;  
   color: #f2f2f2;
   line-height: 1.75;
 }
@@ -117,7 +117,7 @@ h2 {
   font-size: 1.15rem;
   color: #e0e0e0;
   max-width: 750px;
-  margin: 0 auto;      /* centers the paragraph width */
+  margin: 0 auto;      
 }
 /* HOMEPAGE GALLERY */
 .gallery .grid {
@@ -127,8 +127,8 @@ h2 {
 }
 
 .gallery img {
-  width: 100%;
-  height: 450px;
+  width: 80%;
+  height: 390px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.12);
@@ -240,7 +240,12 @@ h2 {
   font-size: 1.2rem;
   opacity: 0.8;
 }
-
+.project-description {
+  background: rgba(0, 0, 0, 0.35); /* soft, premium dark overlay */
+  padding: 60px 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px); /* subtle editorial glass effect */
+}
 /* PROJECT GALLERY */
 .project-gallery {
   padding: 80px 0;
@@ -378,7 +383,7 @@ h2 {
   opacity: 0;
   transform: translateY(10px);
   animation: fadeUp 0.8s ease-out forwards;
-}
+
 
 
 .project-overview p {
@@ -386,13 +391,8 @@ h2 {
   color: #e0e0e0;
   line-height: 1.75;
 }
-/* ANIMATION */
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
+
 .fade-section {
   opacity: 0;
   transform: translateY(20px);
@@ -408,4 +408,11 @@ h2 {
 :root {
   --accent: #ff8f6b; /* warm sunset coral */
   --accent-glow: rgba(255,140,110,0.55);
+}
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  opacity: .7;
+  font-size: .95rem;
 }
